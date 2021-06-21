@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>La tiendita</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Comfortaa">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+}
+
+.menu {
+  display: none;
+}
+
+.header {
+    background: rgb(14,42,163);
+    background: linear-gradient(90deg, rgba(14,42,163,1) 0%, rgba(36,114,189,1) 37%, rgba(0,255,222,1) 100%);
+    padding: 30px;
+    text-align: center;
+}
+
+h2{
+    font-size: 55px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+p{font-family: 'Comfortaa', cursive;}
+
+.footer
+{
+    background: rgba(36,114,189,1);
+    padding: 30px;
+    text-align: center;
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+}
+.button {
+  background-color:rgba(36,114,189,1); /* Green */
+  border: 2px solid white;
+  color: white;
+  width: 100%;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<body>
+     
+<div class="header">
+<h2>La Tiendita <br> "La Esquina"</h2>
+</div>
+
+<!-- Links (sit on top) -->
+<div class="row">
+    <div class="column"> 
+        <a href="#" class="fa fa-home button">  Inicio </a> 
+    </div>
+    <div class="column"> 
+        <a href="productos" class="fa fa-shopping-basket button">  Productos </a> 
+    </div>
+    <div class="column">
+      <a href="#cuenta" class="fa fa-user button ">  Iniciar Sesión</a>
+    </div>
+    <div class="column">
+      <a href="#carrito" class="fa fa-shopping-cart button">  Carrito</a>
+    </div>
+</div>
+
+<br><br>
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+<div class="footer">
+  <i class="far fa-clock" style="font-size: 17px"></i>  De 8:00 a 22:00 <br><br>
+  <i class="fas fa-phone" style="font-size: 17px"></i>  55 5555 5555<br> <br>
+  <i class="fas fa-map-marker-alt" style="font-size: 17px"> </i>  Av. Alcanfores y San Juan, Totoltepec, Sta Cruz Acatlan
+</div>
+
+
+</body>
+</html>
